@@ -10,7 +10,7 @@ export default function Card({name, capital, region, population, flag, code}: Ca
             </div>
             <div className="py-2 px-4 flex flex-col justify-center">
                 <h1 className="text-secondary-200 dark:text-primary-50 text-lg font-extrabold mb-4">{name}</h1>
-                <p className="text-secondary-200 dark:text-primary-50 text-base font-light"><span className="font-bold">Population: </span>{population}</p>
+                <p className="text-secondary-200 dark:text-primary-50 text-base font-light"><span className="font-bold">Population: </span>{population.toLocaleString()}</p>
                 <p className="text-secondary-200 dark:text-primary-50 text-base font-light"><span className="font-bold">Region: </span>{region}</p>
                 <p className="text-secondary-200 dark:text-primary-50 text-base font-light"><span className="font-bold">Capital: </span>{capital}</p>
             </div>
